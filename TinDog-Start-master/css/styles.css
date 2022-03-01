@@ -5,6 +5,7 @@
 
 #features {
     background-color: white;
+    position: relative;
 }
 
 h1 {
@@ -14,6 +15,13 @@ h1 {
     font-weight: 900;
 }
 
+h2 {
+    font-family: "Montserrat-Black", sans-serif;
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
 h3 {
     font-family: 'Montserrat-Black' sans-serif;
     font-size: 1.3rem;
@@ -21,12 +29,13 @@ h3 {
 }
 
 .container-fluid {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
 }
 
 .body {
     font-family: "Montserrat", sans-serif;
 }
+
 
 /* Navigation Bar */
 
@@ -59,8 +68,32 @@ h3 {
 /* Title Image */
 
 .main-img {
-    width: 60%;
+    width: 23%;
     transform: rotate(25deg);
+    position: absolute;
+    right: 23%;
+    padding-left: 10px;
+}
+
+@media (max-width: 991px) {
+
+    #title {
+        text-align: center;
+    }
+
+    h1 {
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .main-img {
+        transform: rotate(0deg);
+        position: static;
+        width: 50%;
+    }
 }
 
 /* Features Text */
@@ -92,4 +125,76 @@ h3 {
 .features-div {
     padding: 45px 0;
     text-align: center;
+}
+
+/* Testimonials */
+
+#testimonials {
+    text-align: center;
+    background-color: salmon;
+    color: white;
+}
+
+.testimonials-img {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px 20px 20px;
+}
+
+#press {
+    background-color: salmon;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-img {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+/* Pricing */
+
+#pricing {
+    margin: 40px 20px;
+    text-align: center;
+}
+
+.card-div {
+    padding-bottom: 20px;
+}
+
+.row {
+    padding-top: 7%;
+}
+
+/* Footer */
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    color: white;
+    padding: 10% 15%;
+}
+
+.cta-txt {
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+#footer {
+    background-color: white;
+    text-align: center;
+}
+
+.link-img {
+    padding: 0 10px;
+}
+
+.copyright-txt {
+    color: gray;
+    padding-top: 30px;
 }
